@@ -21,7 +21,7 @@ export class ContentComponent implements OnInit {
   }
 
   getPizzas() {
-    this.produtosService.getProdutos().subscribe(data => {
+    this.produtosService.getProdutos().subscribe((data: { pizzas: Pizza[]; bebidas: Bebida[]; }) => {
       this.pizzasArray = data.pizzas;
       this.bebidasArray = data.bebidas;
     });

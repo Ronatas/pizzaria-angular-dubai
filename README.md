@@ -1,15 +1,13 @@
 <h1>
   <center>
-    Pizza<span style="color: #ff033c">Delivery</span>
+    Dubai<span style="color: #black">Pizzaria</span>
   </center>
 </h1>
 
 <center>
-  <img src="./github/pizza.svg" width="60"></img>
+  <img src="./github/" width="60"></img>
 
   <p>Aplicação de delivery para pizzarias, feita em Angular!</p>
-
-  Acessar: <a href=" https://pizzadelivery.vercel.app"> https://pizzadelivery.vercel.app</a>
 
 
 ## :hammer: **Tecnologias Usadas** :wrench:

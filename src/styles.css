@@ -20,23 +20,23 @@ body {
 }
 
 .color-pink{
-  color: #ff033c;
+  color: white;
 }
 
 .bg-pink {
-  background: #ff033c;
+  background: black;
 }
 
 .bg-yellow {
-  background: #ffff8c;
+  background: #efb810;
 }
 
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: #ff033c;
+  background-color: black;
 }
 
 .mat-progress-spinner circle, .mat-spinner circle {
-  stroke: #ff033c;
+  stroke: black;
 }
 
 .txt-center{
