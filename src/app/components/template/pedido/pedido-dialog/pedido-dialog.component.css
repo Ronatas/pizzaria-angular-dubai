@@ -25,16 +25,17 @@ tr.mat-footer-row {
 }
 
 .btn-dialog button {
-  background-color: #ffff8c;
+  background-color: #efb810;
 }
 
 .excluir {
   cursor: pointer;
+  color: black;
 }
 
-/*.dialog-icon {
+.dialog-icon {
   padding-bottom: 3px;
-}*/
+}
 
 @media screen and (max-width: 600px) {
   .btn-dialog{

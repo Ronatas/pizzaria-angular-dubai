@@ -27,22 +27,34 @@ export class ContentComponent implements OnInit {
     });
   }
 
-  addPizzaPedido(id: number) {
-    this.pizzasArray.forEach((value)=> {
-      if(value.id === id){
-        this.pedidoService.getPedidoValues(value.name, value.price);
-        this.pedidoService.openSnackBar('Pizza adicionada!');
+  addPizzaPedido(id: number, portion: 'whole' | 'half', isBroto: boolean = false) {
+    this.pizzasArray.forEach((pizza) => {
+      if (pizza.id === id) {
+        let pizzaName: string;
+        let pizzaPrice: number;
+
+        if (isBroto) {
+          // Configuração para pizza broto
+          pizzaName = `Broto de ${pizza.name}`;
+          pizzaPrice = 28.90; // Valor fixo para pizza broto salgada
+        } else {
+          // Configuração para pizza inteira ou meia pizza
+          pizzaName = portion === 'half' ? `Meia ${pizza.name}` : pizza.name;
+          pizzaPrice = portion === 'half' ? pizza.price / 2 : pizza.price;
+        }
+
+        this.pedidoService.getPedidoValues(pizzaName, pizzaPrice);
+        this.pedidoService.openSnackBar(`${pizzaName} adicionada ao pedido!`);
       }
     });
   }
 
   addBebidaPedido(id: number) {
-    this.bebidasArray.forEach((value)=> {
-      if(value.id === id){
-        this.pedidoService.getPedidoValues(`${value.name} ${value.volume}`, value.price);
+    this.bebidasArray.forEach((bebida) => {
+      if (bebida.id === id) {
+        this.pedidoService.getPedidoValues(`${bebida.name} ${bebida.volume}`, bebida.price);
         this.pedidoService.openSnackBar('Bebida adicionada!');
       }
     });
   }
 }
-

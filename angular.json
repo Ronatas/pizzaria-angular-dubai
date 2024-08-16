@@ -67,7 +67,15 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pizzaria:build"
+            "browserTarget": "pizzaria:build",
+            "host": "0.0.0.0",
+
+            "allowedHosts": [
+              "localhost",
+              "127.0.0.1",
+              "https://f475-2804-2894-c100-ce0-852c-8e4d-150f-803f.ngrok-free.app/"
+            ],
+            "disableHostCheck": true
           },
           "configurations": {
             "production": {
@@ -127,5 +135,7 @@
       }
     }
   },
-  "defaultProject": "pizzaria"
+  "cli": {
+    "analytics": "a42cafae-ea06-4468-a616-28fb3ecf0edd"
+  }
 }
