@@ -65,7 +65,7 @@ export class ProdutosService {
                 cat: 'N',
                 price: 39.99,
                 ingredients: 'Mussarela, calabresa, cebola, pimenta e ovo.',
-                img: 'imgs/pizza_baiana.jpeg'
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
             },
             {
                 id: 8,
