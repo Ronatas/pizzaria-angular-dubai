@@ -1,6 +1,7 @@
 export interface Pizza {
   id: number;
   name: string;
+  cat: string;
   price: number;
   ingredients: string;
   img: string;
@@ -24,6 +25,7 @@ export const produtos: Produtos = {
     {
       id: 1,
       name: "Calabresa",
+      cat: 'N',
       price: 23.5,
       ingredients: "Calabresa, muçarela e presunto.",
       img: "https://lh3.googleusercontent.com/pw/ACtC-3dA2byIGysDluhgN_l-uEgmy_zSvQ4KK2YMdW-OrEVdS5qr40XgSMFKYceZTVrzVq8iSj_tOA0PVD11uOJeiwnpdo-1AgrKap1Wd5iM1cB06dIzBMB6mbThxlcPm588F3eTblo5cNYBQrGlb3XjevEb=w736-h552-no?authuser=0"
@@ -31,6 +33,7 @@ export const produtos: Produtos = {
     {
       id: 2,
       name: "Portuguesa",
+      cat: 'N',
       price: 25.0,
       ingredients: "Ovos, muçarela e vegetais.",
       img: "https://lh3.googleusercontent.com/pw/ACtC-3eJ5gIDf6qM3xDAuRI4wafjZ2MQWXLI8sN0Z5MT95B2rWSZACCHEN-rdOIOlQT8gx008UK_h9YkunRlDbcxULg31Wi_Ndb6o4nuyrSmwa_Tc75jCsf6R0HX4gbTe9TIOc31pp-Y_lKCFHErEVRGMF2G=w1258-h943-no?authuser=0"

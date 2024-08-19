@@ -10,352 +10,372 @@ export class ProdutosService {
   private produtos: Produtos = {
     pizzas: [
       
-      {
-        id: 1,
-        name: 'Alface',
-        price: 39.99,
-        ingredients: 'Mussarela, alface e bacon.',
-        img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 2,
-        name: 'Atum',
-        price: 39.99,
-        ingredients: 'Mussarela, cebola e atum.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-e-uma-comida-italiana-servida-na-placa-de-circulo-de-madeira_41043-643.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 3,
-        name: 'Atum II',
-        price: 39.99,
-        ingredients: 'Mussarela, atum e catupiry.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-e-uma-comida-italiana-servida-na-placa-de-circulo-de-madeira_41043-643.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 4,
-        name: 'Americana',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto, bacon, ovo e tomate.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-de-queijo-de-pretzel-recem-assada_1202914-41974.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 5,
-        name: 'Alho',
-        price: 39.99,
-        ingredients: 'Mussarela e alho.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-de-queijo-caseira_133187-106.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 6,
-        name: 'Aliche',
-        price: 39.99,
-        ingredients: 'Mussarela e aliche.',
-        img: 'https://img.freepik.com/fotos-premium/uma-pizza-com-cogumelos-e-cogumelos_1044943-64479.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 7,
-        name: 'Baiana',
-        price: 39.99,
-        ingredients: 'Mussarela, calabresa, cebola, pimenta e ovo.',
-        img: 'https://img.freepik.com/fotos-premium/uma-pizza-de-queijo-classica-recem-saida-do-forno-com-queijo-derretido-pegajoso_875755-4689.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 8,
-        name: 'Bacon',
-        price: 39.99,
-        ingredients: 'Mussarela, bacon e tomate.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-fresca-e-deliciosa-numa-mesa-de-madeira_615731-9527.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 9,
-        name: 'Brocólis',
-        price: 39.99,
-        ingredients: 'Mussarela, brócolis, parmesão.',
-        img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 10,
-        name: 'Brocólis II',
-        price: 39.99,
-        ingredients: 'Mussarela, brócolis, champignon e creme de leite.',
-        img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 11,
-        name: 'Brocólis III',
-        price: 39.99,
-        ingredients: 'Mussarela, brócolis, bacon e catupiry.',
-        img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 12,
-        name: 'Barbecue',
-        price: 39.99,
-        ingredients: 'Mussarela, calabresa, ovo, bacon, molho barbecue.',
-        img: 'https://img.freepik.com/fotos-premium/desfrute-de-uma-deliciosa-e-classica-pizza-margherita-que-e-recem-cozida-a-perfeicao-e-deliciosa_152124-10824.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 13,
-        name: 'Champignom',
-        price: 39.99,
-        ingredients: 'Mussarela e champignon.',
-        img: 'https://img.freepik.com/fotos-premium/pizza-saborosa-com-frango-e-cogumelos-na-massa-preta_112304-801.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
-    },
-    {
-        id: 14,
-        name: 'Calabresa',
-        price: 39.99,
-        ingredients: 'Mussarela, cebola e calabresa.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 15,
-        name: 'Calabresa C/ Catupiry',
-        price: 39.99,
-        ingredients: 'Mussarela, calabresa e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 16,
-        name: 'Cheddar',
-        price: 39.99,
-        ingredients: 'Mussarela e cheddar.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 17,
-        name: 'Catupiry',
-        price: 39.99,
-        ingredients: 'Mussarela e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 18,
-        name: 'Cinco Queijos',
-        price: 39.99,
-        ingredients: 'Mussarela, catupiry, provolone, gorgonzola e parmesão.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 19,
-        name: 'Frango C/ Catupiry',
-        price: 39.99,
-        ingredients: 'Mussarela, frango, catupiry e milho.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 20,
-        name: 'Grega',
-        price: 39.99,
-        ingredients: 'Mussarela, lombo, creme de leite e manjericão.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 21,
-        name: 'Lisboa',
-        price: 39.99,
-        ingredients: 'Mussarela, calabresa, catupiry e batata palha.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 22,
-        name: 'Lombo',
-        price: 39.99,
-        ingredients: 'Mussarela, lombo e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 23,
-        name: 'Milho',
-        price: 39.99,
-        ingredients: 'Mussarela, milho e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 24,
-        name: 'Milho II',
-        price: 39.99,
-        ingredients: 'Mussarela, milho, bacon e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 25,
-        name: 'Mussarela',
-        price: 39.99,
-        ingredients: 'Mussarela e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 26,
-        name: 'Marguerita',
-        price: 39.99,
-        ingredients: 'Mussarela, parmesão, tomate e manjericão.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 27,
-        name: 'Mexicana',
-        price: 39.99,
-        ingredients: 'Mussarela, frango, cheddar e pimenta.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 28,
-        name: 'Napolitana',
-        price: 39.99,
-        ingredients: 'Mussarela, parmesão e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 29,
-        name: 'Polastra',
-        price: 39.99,
-        ingredients: 'Mussarela, frango e creme de leite.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 30,
-        name: 'Peperone',
-        price: 39.99,
-        ingredients: 'Mussarela e peperone.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 31,
-        name: 'Peperone II',
-        price: 39.99,
-        ingredients: 'Mussarela, peperone e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 32,
-        name: 'Paulista',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto, bacon e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 33,
-        name: 'Paulista II',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto, ovo e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 34,
-        name: 'Portuguesa',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto, ervilha, ovo, palmito e cebola.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 35,
-        name: 'Palmito',
-        price: 39.99,
-        ingredients: 'Mussarela, palmito, catupiry e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 36,
-        name: 'Peito de Peru',
-        price: 39.99,
-        ingredients: 'Mussarela, peito de peru e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 37,
-        name: 'Peito de peru II',
-        price: 39.99,
-        ingredients: 'Mussarela, peito de peru, milho e cebola.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 38,
-        name: 'Presunto',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 39,
-        name: 'Quatro Queijos',
-        price: 39.99,
-        ingredients: 'Mussarela, catupiry, provolone e gorgonzola.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 40,
-        name: 'Requeijão',
-        price: 39.99,
-        ingredients: 'Mussarela, requeijão, bacon e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 41,
-        name: 'Seis Queijos',
-        price: 39.99,
-        ingredients: 'Mussarela, catupiry, provolone, gorgonzola, parmesão e cheddar.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 42,
-        name: 'Strogonoff de Frango',
-        price: 39.99,
-        ingredients: 'Mussarela, frango, champignon, milho, creme de leite e batata palha.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 43,
-        name: 'Salame',
-        price: 39.99,
-        ingredients: 'Mussarela, salame e cebola.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 44,
-        name: 'Siciliana',
-        price: 39.99,
-        ingredients: 'Mussarela, champignon, bacon e parmesão.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 45,
-        name: 'Saborosa',
-        price: 39.99,
-        ingredients: 'Mussarela, presunto, catupiry e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 46,
-        name: 'Três Queijos',
-        price: 39.99,
-        ingredients: 'Mussarela, catupiry e parmesão.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 47,
-        name: 'Toscana',
-        price: 39.99,
-        ingredients: 'Mussarela, calabresa, ovo e catupiry.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 48,
-        name: 'Tomate Seco',
-        price: 39.99,
-        ingredients: 'Mussarela e tomate seco.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    },
-    {
-        id: 49,
-        name: 'Vegetariana',
-        price: 39.99,
-        ingredients: 'Mussarela, ervilha, palmito, milho e tomate.',
-        img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
-    }
+          
+            {
+                id: 1,
+                name: 'Alface',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, alface e bacon.',
+                img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 2,
+                name: 'Atum',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, cebola e atum.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-e-uma-comida-italiana-servida-na-placa-de-circulo-de-madeira_41043-643.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 3,
+                name: 'Atum II',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, atum e catupiry.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-e-uma-comida-italiana-servida-na-placa-de-circulo-de-madeira_41043-643.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 4,
+                name: 'Americana',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, presunto, bacon, ovo e tomate.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-de-queijo-de-pretzel-recem-assada_1202914-41974.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 5,
+                name: 'Alho',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e alho.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-de-queijo-caseira_133187-106.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 6,
+                name: 'Aliche',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e aliche.',
+                img: 'https://img.freepik.com/fotos-premium/uma-pizza-com-cogumelos-e-cogumelos_1044943-64479.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 7,
+                name: 'Baiana',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, calabresa, cebola, pimenta e ovo.',
+                img: 'imgs/pizza_baiana.jpeg'
+            },
+            {
+                id: 8,
+                name: 'Bacon',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, bacon e tomate.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-fresca-e-deliciosa-numa-mesa-de-madeira_615731-9527.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 9,
+                name: 'Brocólis',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, brócolis, parmesão.',
+                img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 10,
+                name: 'Brocólis II',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, brócolis, champignon e creme de leite.',
+                img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 11,
+                name: 'Brocólis III',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, brócolis, bacon e catupiry.',
+                img: 'https://img.freepik.com/fotos-gratis/comida-de-pizza_144627-38485.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 12,
+                name: 'Barbecue',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, calabresa, ovo, bacon, molho barbecue.',
+                img: 'https://img.freepik.com/fotos-premium/desfrute-de-uma-deliciosa-e-classica-pizza-margherita-que-e-recem-cozida-a-perfeicao-e-deliciosa_152124-10824.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 13,
+                name: 'Champignom',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e champignon.',
+                img: 'https://img.freepik.com/fotos-premium/pizza-saborosa-com-frango-e-cogumelos-na-massa-preta_112304-801.jpg?ga=GA1.1.620364796.1723812083&semt=ais_hybrid'
+            },
+            {
+                id: 14,
+                name: 'Calabresa',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, cebola e calabresa.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 15,
+                name: 'Calabresa C/ Catupiry',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, calabresa e catupiry.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 16,
+                name: 'Cheddar',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e cheddar.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 17,
+                name: 'Catupiry',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e catupiry.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 18,
+                name: 'Cinco Queijos',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, catupiry, provolone, gorgonzola e parmesão.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 19,
+                name: 'Frango C/ Catupiry',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, frango, catupiry e milho.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 20,
+                name: 'Grega',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, lombo, creme de leite e manjericão.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 21,
+                name: 'Lisboa',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, atum, champignon, catupiry e creme de leite.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 22,
+                name: 'Marguerita',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, tomate e manjericão.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 23,
+                name: 'Milanesa',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, lombo, cebola e tomate.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 24,
+                name: 'Milho',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e milho.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 25,
+                name: 'Napolitana',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, presunto, parmesão e orégano.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 26,
+                name: 'Paulista',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, presunto, champignon e palmito.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 27,
+                name: 'Palmito',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e palmito.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 28,
+                name: 'Portuguesa',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, presunto, cebola, ovo, azeitonas e ervilha.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 30,
+                name: 'Rústica',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, provolone, alho e parmesão.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 32,
+                name: 'Salame',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela e salame.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 33,
+                name: 'Toscana',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, presunto, calabresa e ovo.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 34,
+                name: 'Vegetariana',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, brócolis, palmito, champignon e alho.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 40,
+                name: 'Quatro Queijos',
+                cat: 'N',
+                price: 39.99,
+                ingredients: 'Mussarela, gorgonzola, provolone e parmesão.',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+            },
+            {
+                id: 41,
+                name: 'Doritos',
+                cat: 'E',
+                price: 44.90,
+                ingredients: 'Mussarela, frango cheddar, pimenta e Doritos',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 42,
+                name: 'Dubai',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, lombo, milho, ovo, bacon, catupiry',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 43,
+                name: 'Moda casa',
+                cat: 'E',
+                price: 41.90,
+                ingredients: 'Mussarela, frango, presunto, ovo, milho, bacon e catupiry',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 44,
+                name: 'Sueca',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, presunto, palmito, milho, bacon e catupiry',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 45,
+                name: 'Português da casa',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, presunto, ervilha, palmito, ovo, cebola e catupiry',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 46,
+                name: 'Irlandesa',
+                cat: 'E',
+                price: 41.90,
+                ingredients: 'Mussarela, frango, presunto, ovo, milho, bacon, catupiry, tomate e cebola',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 47,
+                name: 'Romana',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, lombo, milho, presunto, ovo e catupiry',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 48,
+                name: 'Magnífica',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, bacon, catupiry e tomate',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 49,
+                name: 'Vitoriana',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, presunto, champignon e creme de leite',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 50,
+                name: 'Nervosa',
+                cat: 'E',
+                price: 60.00,
+                ingredients: 'Mussarela, presunto, calabresa, frango, cebola, milho, lombo, catupiry, bacon, provolone e tomate',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 51,
+                name: 'Da Patroa',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, lombo, milho, cebola, catupiry e tomate',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              },
+              {
+                id: 52,
+                name: 'Famosa',
+                cat: 'N',
+                price: 39.90,
+                ingredients: 'Mussarela, frango, bacon, catupiry e tomate',
+                img: 'https://pizzadipietre.com/wp-content/uploads/2021/06/sabores-pizza-mais-pedidos-brasileiros.jpg'
+              }
+        ]
+        
     
       // Adicione outras pizzas conforme necessário
-    ],
+    ,
     bebidas: [
         {
             id: 1,

@@ -13,6 +13,8 @@ export class ContentComponent implements OnInit {
 
   pizzasArray: Pizza[] = [];
   bebidasArray: Bebida[] = [];
+  pizzasEspeciais: Pizza[] = []; // Para armazenar pizzas especiais
+  pizzasNormais: Pizza[] = []; // Para armazenar pizzas normais
 
   constructor(private produtosService: ProdutosService, private pedidoService: PedidoService) { }
 
@@ -24,6 +26,10 @@ export class ContentComponent implements OnInit {
     this.produtosService.getProdutos().subscribe((data: { pizzas: Pizza[]; bebidas: Bebida[]; }) => {
       this.pizzasArray = data.pizzas;
       this.bebidasArray = data.bebidas;
+
+      // Filtra as pizzas normais e especiais
+      this.pizzasNormais = this.pizzasArray.filter(pizza => pizza.cat !== 'E');
+      this.pizzasEspeciais = this.pizzasArray.filter(pizza => pizza.cat === 'E');
     });
   }
 
